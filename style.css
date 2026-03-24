@@ -1,3 +1,51 @@
+    .Artsiom{
+    margin-top: 10px;
+}
+
+
+
 .body{
-    background-color: red;
+    margin-left:100px;
+    margin-right:100px;
+    background-color: #938a87;
+    
+    
+}
+.about{
+    width: 100%;
+}
+.main{
+    background-color: #a0bdd6;
+    box-shadow:0 20px 40px rgba(0,0,0,0.6);
+    border: 1px solid black;
+}
+.contactInformation{
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding-left:50px;
+    padding-top:50px;
+    padding-right:50px;
+    
+}
+.photo{
+    flex: 0.5;
+    padding-top:10px;
+}
+.photo img{
+  
+    width: 100%;
+ 
+    border-radius: 50px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+.information{
+    flex: 1;
+    width: fit-content;
+    
+} 
+.aboutMe{
+    flex: 1.5;
+   
+    
 }
