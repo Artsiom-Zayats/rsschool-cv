@@ -7,38 +7,49 @@
     <title>Document</title>
 </head>
 <body class="body">
+    <header class="header">
+        <nav>
+        <a href="#about">Обо мне</a>
+        <a href="#experience">Опыт</a>
+        <a href="#education">Образование</a>
+        <a href="#code">Примеры кода</a>
+    </nav>
+    </header>
     <main class="main">
-        <section class="about">
-           
-            
+        <section class="about" id="about" style="margin-bottom: 0px; padding-bottom: 30px;">       
             <div class="contactInformation">
                 <div class="photo">
-                      <img src="F:\УЧЕБА JAVA BACKAND\Front\cv\5321533538983155268.jpg" alt="iAm" class="myPhoto" >   
+                      <img src="5321533538983155268.jpg" alt="iAm" class="myPhoto" >   
                 </div>
                 
                  <div class="information">
                     <h1 class="Artsiom" style="margin-top: 5px; margin-bottom: 5px;">Artsiom Zayats</h1>
-                    <h4 style="margin-top: 5px;">Deputy Head – Chief Engineer</h4>
+                    <h2 class="dh" style="margin-top: 5px;">Deputy Head – Chief Engineer</h2>
                     <h3>Contact Information:</h3>
-                    <p>
-                        Location: Minsk, Belarus;<br>
-                        Phone: +375 29 945 09 45;<br>
-                        Email: ctapbiu.zayats@gmail.com;<br>
-                        Discord: ctapbiu_zayats;<br>
-                        LeetCode: https://leetcode.com/u/CTAPbIu_
-                    </p>
+                    <ul>
+                        <li>Location: Minsk, Belarus;</li>
+                        <li>Phone: +375 29 945 09 45;</li>
+                        <li>Email: ctapbiu.zayats@gmail.com;</li>
+                        <li>Discord: ctapbiu_zayats;</li>
+                        <li>LeetCode: https://leetcode.com/u/CTAPbIu_</li>
+                    </ul>
                  </div>
-                <div class="aboutMe">
-                     <h2 style="margin-top: 15px; padding-bottom: 30px;">About me:</h2>
-                     <p>Highly accomplished and results-oriented Civil Engineer with over 10 years of leadership experience in the road construction industry. I am an advocate for lifelong learning and am currently expanding my technical toolkit by studying Frontend Development. My goal is to combine traditional engineering leadership with modern digital solutions. I am a disciplined professional, capable of finding unconventional solutions and managing multidisciplinary teams of up to 60 people.</p>
-                </div>
+            <div class="aboutMe">
+                <h2 style="margin-top: 15px; padding-bottom: 30px;">About me:</h2>
+                <p>Highly accomplished and results-oriented Civil Engineer with over 10 years of leadership experience in the road construction industry. I am an advocate for lifelong learning and am currently expanding my technical toolkit by studying Frontend Development. My goal is to combine traditional engineering leadership with modern digital solutions. I am a disciplined professional, capable of finding unconventional solutions and managing multidisciplinary teams of up to 60 people.</p>
+            </div>
             
             </div>
-            <div class="underlined"></div>
+            
         </section>
-        <section class="expEd">
+        <section class="expEd" style="
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+        ">
             <div class="experienceEducation">
-            <div class="experience">
+            <div class="experience" id="experience">
                 <h2 style="padding-left: 20px;">Experience:</h2>
                 <ul>
                     <li>June 2025 – Present - Deputy Head – Chief Engineer DRSU (Road Repair and Construction Administration) — Gantsevichi, Belarus
@@ -67,7 +78,7 @@
 
                 </ul>
             </div>
-            <div class="education">
+            <div class="education" id="education">
                 <h2 style="padding-left: 20px;">Education:</h2>
                 <ul>
                     <li>Civil Engineer (2015 – 2018) Belarusian National Technical University (BNTU);</li>
@@ -106,9 +117,62 @@
                   
             </div>
             </div>
-            <div class="underlined"></div>  
         </section>
-        <section class="code"></section>
+        <section class="code" id="code" style="
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+        ">
+            <h2 style="padding-left: 20px;margin-top: 0px;padding-top: 20px;">Code example:</h2>
+            <div class="codeExample">
+              <div class="example1"  style="padding-left: 20px;" >  
+                <pre><code>
+public static int lengthOfLastWord(String s) {
+    char[] arr = s.trim().toCharArray();
+    int worldLength = arr.length;
+    for (int i = arr.length - 1; i >= 0; i--) {
+        if (arr[i] == ' ') {
+            worldLength = arr.length - (i + 1);
+            break;
+        }
+    }
+    return worldLength;
+}
+                </code></pre>
+                </div>
+                <div class="example2" style="padding-left: 45px;">
+                    <pre><code>
+public static int[] plusOne(int[] digits) {
+    digits[digits.length - 1] += 1;
+    if (digits[digits.length - 1] == 10) {
+        for (int i = digits.length - 1; i >= 0; i--) {
+            if (digits[i] == 10) {
+                if (i == 0) {
+                    int[] arr = new int[digits.length + 1];
+                    arr[0] = 1;
+                    for (int j = 1; j &lt; arr.length; j++) {
+                        arr[j] = 0;
+                    }
+                return arr;
+                }
+            digits[i] = 0;
+            digits[i - 1] += 1;
+            }
+        }
+    }
+    return digits;
+}
+                    </code></pre>
+                </div>
+                
+            </div>    
+        </section>
+        
     </main>
+    <footer class="footer">
+        <p class="rs">2026 RS School</p>
+    </footer>
 </body>
 </html>
+

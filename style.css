@@ -1,4 +1,4 @@
-    .Artsiom{
+.Artsiom{
     margin-top: 10px;
 }
 
@@ -8,15 +8,24 @@
     margin-left:100px;
     margin-right:100px;
     background-color: #938a87;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
     
+}
+header, main, footer{
+    width: 1200px;
 }
 .about{
     width: 100%;
+    background-color: #c6d6a0;
 }
-.main{
-    background-color: #a0bdd6;
-    box-shadow:0 20px 40px rgba(0,0,0,0.6);
+.main {
+    width: 1200px;           
+    margin: 0 auto;         
+    background-color: #c6d6a0;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
     border: 1px solid black;
 }
 .contactInformation{
@@ -47,11 +56,12 @@
 .aboutMe{
     flex: 1.5;
 }
-.underlined{
-    width: 98%;
-    height: 2px;
-    background-color: #1fa9b8;
-    margin: 10px 10px ;
+
+
+.expEd{
+    background-color: #c2bf6a;
+    border-top:2px solid #b8491f;
+    border-bottom:2px solid #b8491f;
 }
 .experienceEducation{
     display: flex;
@@ -76,6 +86,37 @@
     top: 10%;
     height: 80%;
     width: 2px;
-    background-color: #333;
+    background-color: #b8491f;
     transform: translateX(-50%);
+}
+.code{
+    background-color: #c6d6a0;
+    
+}
+.codeExample {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+   
+}
+.example1{
+    flex: 1;
+}
+.example2{
+    flex: 1;
+}
+.footer{
+   
+    text-align: center;
+    
+}
+.rs{
+    color: #fff700;
+    font-size: 24px;
+}
+
+.header{
+    text-align: left;
+    margin-left: 40px;
+   
 }
