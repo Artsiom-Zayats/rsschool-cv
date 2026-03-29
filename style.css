@@ -1,3 +1,133 @@
+.Artsiom{
+    margin-top: 10px;
+}
+
+
+
 .body{
-    background-color: red;
+    margin-left:100px;
+    margin-right:100px;
+    background-color: #938a87;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4;
+    
+}
+header, main, footer{
+    width: 1200px;
+}
+.horizontlist{
+    display: flex;
+    gap:20px;
+    list-style-type: none;
+}
+.about{
+    width: 100%;
+    background-color: #c6d6a0;
+}
+.main {
+    width: 1200px;           
+    margin: 0 auto;         
+    background-color: #c6d6a0;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    border: 1px solid black;
+}
+.contactInformation{
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding-left:50px;
+    padding-top:50px;
+    padding-right:50px;
+    
+}
+.photo{
+    flex: 0.5;
+    padding-top:10px;
+}
+.photo img{
+  
+    width: 100%;
+ 
+    border-radius: 50px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+.information{
+    flex: 1;
+    width: fit-content;
+    
+} 
+.aboutMe{
+    flex: 1.5;
+}
+
+
+.expEd{
+    background-color: #c2bf6a;
+    border-top:2px solid #b8491f;
+    border-bottom:2px solid #b8491f;
+}
+.experienceEducation{
+    display: flex;
+   
+    justify-content: center ;
+    gap: 50px;
+   
+}
+.experience{
+    flex: 1;
+}
+.education{
+    flex:1;
+}
+.experienceEducation{
+    position: relative;
+}
+.experienceEducation::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    height: 80%;
+    width: 2px;
+    background-color: #b8491f;
+    transform: translateX(-50%);
+}
+.code{
+    background-color: #c6d6a0;
+    
+}
+.codeExample {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+.example1{
+    flex: 1;
+}
+.example2{
+    flex: 1;
+}
+
+.footer {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    gap: 20px;           
+}
+.rs{
+    color: #fff700;
+    font-size: 24px;
+}
+
+.header{
+    text-align: left;
+    margin-left: 40px;
+   
+}
+.logo{
+    width: 10%;
 }

@@ -1,11 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<body class="body">
+    <header class="header">
+        <nav>
+            <ul class="horizontlist">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#experience">Опыт</a></li>
+                <li><a href="#education">Образование</a></li>
+                <li><a href="#code">Примеры кода</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="about" id="about" style="margin-bottom: 0px; padding-bottom: 30px;">       
+            <div class="contactInformation">
+                <div class="photo">
+                      <img src="5321533538983155268.jpg" alt="Artsiom Zayats" class="myPhoto" >   
+                </div>
+                
+                 <div class="information">
+                    <h1 class="Artsiom" style="margin-top: 5px; margin-bottom: 5px;">Artsiom Zayats</h1>
+                    <h2 class="dh" style="margin-top: 5px;">Deputy Head – Chief Engineer</h2>
+                    <h3>Contact Information:</h3>
+                    <ul>
+                        <li>Location: Minsk, Belarus;</li>
+                        <li>Phone: +375 29 945 09 45;</li>
+                        <li>Email: ctapbiu.zayats@gmail.com;</li>
+                        <li>Discord: ctapbiu_zayats;</li>
+                        <li>LeetCode: https://leetcode.com/u/CTAPbIu_</li>
+                    </ul>
+                 </div>
+            <div class="aboutMe">
+                <h2 style="margin-top: 15px; padding-bottom: 30px;">About me:</h2>
+                <p>Highly accomplished and results-oriented Civil Engineer with over 10 years of leadership experience in the road construction industry. I am an advocate for lifelong learning and am currently expanding my technical toolkit by studying Frontend Development. My goal is to combine traditional engineering leadership with modern digital solutions. I am a disciplined professional, capable of finding unconventional solutions and managing multidisciplinary teams of up to 60 people.</p>
+            </div>
+            
+            </div>
+            
+        </section>
+        <section class="expEd" style="
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+        ">
+            <div class="experienceEducation">
+            <div class="experience" id="experience">
+                <h2 style="padding-left: 20px;">Experience:</h2>
+                <ul>
+                    <li>June 2025 – Present - Deputy Head – Chief Engineer DRSU (Road Repair and Construction Administration) — Gantsevichi, Belarus
+                        <ul>
+                            <li>Direct management of multiple structural units totaling 60+ employees.</li>
+                            <li>Overseeing complex road construction projects of national, regional, and district importance.</li>
+                            <li>Providing technical leadership and ensuring compliance with strict engineering regulations.</li>
+                        </ul>
+                    </li>
+                    <li>2019 – 2025 - Construction Site Manager  DRSU — Gantsevichi, Belarus
+                        <ul>
+                            <li>Managed day-to-day operations and coordinated subcontractors on large-scale sites.</li>
+                            <li>Ensured 100% quality standards and met project deadlines consistently.</li>
+                        </ul>
+                    </li>
+                    <li>2014 – 2019 - Road Foreman (Master) DRSU (Gantsevichi / Luninets)
+                        <ul>
+                            <li>Supervised construction crews and technical execution of roadworks.</li>
+                        </ul>
+                    </li>
+                    <li>2013 – 2014 - Civil Construction Worker Construction Company — Gantsevichi
+                        <ul>
+                            <li>Gained fundamental hands-on experience in construction processes and material handling.</li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="education" id="education">
+                <h2 style="padding-left: 20px;">Education:</h2>
+                <ul>
+                    <li>Civil Engineer (2015 – 2018) Belarusian National Technical University (BNTU);</li>
+                    <li>Construction Technician (2010 – 2013) Mogilev State Architecture and Construction College.</li>
+                </ul>
+                <h2 style="padding-left: 20px;">Technical skills & certification:</h2>
+                <ul>
+                    <li>Engineering & Leadership:
+                        <ul>
+                            <li>Project Management & Multi-unit Team Leadership (60+ people);</li>
+                            <li>Road, Bridge, and Airfield Construction Quality Control;</li>
+                        </ul>
+                    </li>
+                    <li>IT & Programming:
+                        <ul>
+                            <li>Frontend Development (In progress);</li>
+                            <li>Programming Basics: Java, SQL;</li>
+                            <li>Version Control: GIT;</li>
+
+                        </ul>
+                    </li>
+                    <li>Professional Certifications (Belstroycenter):
+                        <ul>
+                            <li>Chief Engineer Certificate (Roads, Bridges, Airfields);</li>
+                            <li>Chief Engineer Certificate (Site Landscaping / Improvement);</li>
+                            <li>Site Manager Certificate (Roads & Landscaping);</li>
+                        </ul>
+                    </li>
+                    <li>Other:
+                        <ul>
+                            <li>Driving License: Category B;</li>
+                            <li>English Level: Elementary (A2).</li>
+                        </ul>
+                    </li>
+                </ul>
+                  
+            </div>
+            </div>
+        </section>
+        <section class="code" id="code" style="
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+        ">
+            <h2 style="padding-left: 20px;margin-top: 0px;padding-top: 20px;">Code example:</h2>
+            <div class="codeExample">
+              <div class="example1"  style="padding-left: 20px;" >  
+                <pre><code>
+public static int lengthOfLastWord(String s) {
+    char[] arr = s.trim().toCharArray();
+    int worldLength = arr.length;
+    for (int i = arr.length - 1; i >= 0; i--) {
+        if (arr[i] == ' ') {
+            worldLength = arr.length - (i + 1);
+            break;
+        }
+    }
+    return worldLength;
+}
+                </code></pre>
+                </div>
+                <div class="example2" style="padding-left: 45px;">
+                    <pre><code>
+public static int[] plusOne(int[] digits) {
+    digits[digits.length - 1] += 1;
+    if (digits[digits.length - 1] == 10) {
+        for (int i = digits.length - 1; i >= 0; i--) {
+            if (digits[i] == 10) {
+                if (i == 0) {
+                    int[] arr = new int[digits.length + 1];
+                    arr[0] = 1;
+                    for (int j = 1; j &lt; arr.length; j++) {
+                        arr[j] = 0;
+                    }
+                return arr;
+                }
+            digits[i] = 0;
+            digits[i - 1] += 1;
+            }
+        }
+    }
+    return digits;
+}
+                    </code></pre>
+                </div>
+                
+            </div>    
+        </section>
+        
+    </main>
+    <footer class="footer">
+        
+            <p class="rs">2026</p>
+            <a href="https://github.com/Artsiom-Zayats/">GitHub</a>  
+            <a href="https://rs.school/courses/javascript-ru">RS School</a>   
+            <img src="rs-school-logo.svg" class="logo">
+        
+    </footer>
 </body>
 </html>
+
